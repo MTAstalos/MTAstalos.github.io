@@ -5,7 +5,7 @@
 * CSS
 
 ## Website
-https://MTAstalos.github.io/Horiseon/
+MTAstalos.github.io
 
 ## Contribution
 Made with ❤️ by Michael Astalos
