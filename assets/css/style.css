@@ -1,0 +1,137 @@
+:root {
+    --macha: #CEE5D0;
+    --creme: #F3F0D7;
+    --tan: #D8B384;
+    --brown: #5E454B;
+    --grey: #444444;
+}
+*{
+    /*allows elements to touch the sides of the browser window*/
+    box-sizing: border-box;
+    margin: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* header start */
+header {
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--macha);
+    color: var(--grey);
+}
+header h1 {
+    font-size: 45px;
+}
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    /* removes buttet points */
+    list-style: none;
+}
+header nav ul li a {
+    font-size: 3vw;
+    margin: 10px 10px;
+    /* removes hyperlink look from a tags */
+    text-decoration: none;
+    color: var(--grey);
+}
+/* hearder stop */
+
+
+section {
+    width: 100%;
+    /* temporay, to help visualize, remove later */
+    background-color: var(--creme);
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+}
+
+section:nth-child(2n) {
+    /* selects every even section formatting */
+    background-color: var(--tan);
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    text-align: center;
+    width: 24%;
+    font-size: 50px;
+    padding-bottom: 5px;
+    margin: 20px 0;
+    color: var(--grey);
+    border-bottom: 3px solid var(--creme);
+}
+
+section:nth-child(2n-1) .row h2 {
+    border-bottom: 3px solid var(--tan);
+}
+
+/* bio start */
+.bio-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.bio-content {
+    width: 35%;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.4;
+    
+}
+.bio-content h3 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 35px;
+}
+.bio-img{
+    width: 700px;
+    margin-right: 10px;
+}
+.bio-img img {
+    width: 100%;
+    border-radius: 200px;
+}
+/* bio stop */
+
+/* projects start */
+.projects {
+    justify-content: center;
+}
+.project {
+    margin: 10px 25px;
+    width: 350px;
+    height: 200px;
+}
+/* projects stop */
+
+.icon{
+    width: 100px;
+}
+
+.icon img {
+    width: 100%;
+}
+
+footer {
+    width: 100%;
+    background-color: var(--brown);
+    color: var(--macha);
+    height: 100px;
+}

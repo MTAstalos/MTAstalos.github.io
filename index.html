@@ -4,7 +4,9 @@
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Protfolio</title>
-        <link rel="stylesheet" href="./assets/style.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="./assets/css/button-style.css">
+        <script src="./assets/java/button.js"></script>
     </head>
 
     <body>
@@ -21,12 +23,12 @@
         </header>
 
         <!-- possible "hero" -->
-        <section>
-        </section>
 
         <!-- bio/about me -->
         <section id="bio">
-            <h2>Bio</h2>
+            <div class="row">
+                <h2>Bio</h2>
+            </div>  
             <div class="bio-container">
                 <div class="bio-img">
                     <img src="./assets/images/self_image.jpg" alt="Michael and the Astalos family at his graduation ceremony">
@@ -41,19 +43,36 @@
         </section>
 
         <!-- projects/working process -->
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="project-1">
-                <h3>project1 content</h3>
+        <section id="projects" class="projects">
+            <div class="row">
+                <h2>Projects</h2>
             </div>
-            <div class="project-2">
-                <h3>project2 content</h3>
+            <div class="project">
+                <!-- credit for those code goes to https://www.littlesnippets.net/snip1573 -->
+                <figure class="snip1573">
+                    <img src="./assets/images/run-buddy.jpg" alt="Run Buddy website" />
+                    <figcaption>
+                      <h3>Visit Webpage</h3>
+                    </figcaption>
+                    <a href="https://mtastalos.github.io/run-buddy/"></a>
+                  </figure>
+            </div>
+            <div class="project">
+                <figure class="snip1573">
+                    <img src="./assets/images/Horiseon.jpg" alt="Horiseon website" />
+                    <figcaption>
+                      <h3>Visit Webpage</h3>
+                    </figcaption>
+                    <a href="https://mtastalos.github.io/Horiseon/"></a>
+                  </figure>
             </div>
         </section>
 
         <!-- Contact info  -->
         <section id="contact-info">
-            <h2>Contact Info</h2>
+            <div class="row">
+                <h2>Contact Info</h2>
+            </div>
             <div class="icon">
                 <img src="./assets/images/linkedin.png" alt="">
             </div>
@@ -66,9 +85,7 @@
             </div>
         </section>
         <footer>
-            <div>
-                <p>This is the footer </p>
-            </div>
+
         </footer>
         
     </body>
