@@ -17,34 +17,6 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-/* header start */
-header {
-    width: 100%;
-    padding: 20px 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: var(--macha);
-    color: var(--grey);
-}
-header h1 {
-    font-size: 45px;
-}
-header nav ul {
-    display: flex;
-    justify-content: space-between;
-    /* removes buttet points */
-    list-style: none;
-}
-header nav ul li a {
-    font-size: 3vw;
-    margin: 10px 10px;
-    /* removes hyperlink look from a tags */
-    text-decoration: none;
-    color: var(--grey);
-}
-/* hearder stop */
-
 
 section {
     width: 100%;
@@ -79,13 +51,47 @@ section h2 {
 
 h3 {
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     font-size: 35px;
 }
 
 section:nth-child(2n-1) .row h2 {
     border-bottom: 3px solid var(--tan);
 }
+
+/* header start */
+header {
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--macha);
+    color: var(--grey);
+}
+header h1 {
+    font-size: 55px;
+}
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    /* removes buttet points */
+    list-style: none;
+}
+header nav ul li a {
+    font-size: 3vw;
+    margin: 10px 10px;
+    /* removes hyperlink look from a tags */
+    text-decoration: none;
+    color: var(--grey);
+}
+header nav ul li a:hover {
+    text-shadow: 1px 1px #402218;
+    color: #402218;
+    border-bottom: 1px solid#402218;
+    padding-bottom: 5px;  
+}
+/* hearder stop */
 
 /* bio start */
 .bio-container{
@@ -102,7 +108,7 @@ section:nth-child(2n-1) .row h2 {
     
 }
 .bio-img{
-    width: 700px;
+    width: 650px;
     margin-right: 10px;
 }
 .bio-img img {
@@ -125,8 +131,9 @@ section:nth-child(2n-1) .row h2 {
 .project:hover {
     transform: scale(1.3);
 }
-
 /* projects stop */
+
+/* footer start */
 footer {
     display: flex;
     flex-direction: column;
@@ -166,7 +173,10 @@ footer nav ul li a {
 .icon{
     width: 75px;
 }
+.icon:hover {
+    transform: scale(1.2);
+}
 .icon img {
     width: 100%;
 }
-
+/* footer stop */
