@@ -17,6 +17,40 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+/* header start */
+header {
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--macha);
+    color: var(--grey);
+}
+header h1 {
+    font-size: 55px;
+    text-align: center;
+}
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    /* removes buttet points */
+    list-style: none;
+}
+header nav ul li a {
+    font-size: 3vw;
+    margin: 10px 10px;
+    /* removes hyperlink look from a tags */
+    text-decoration: none;
+    color: var(--grey);
+}
+header nav ul li a:hover {
+    text-shadow: 1px 1px #402218;
+    color: #402218;
+    border-bottom: 1px solid#402218;
+    padding-bottom: 5px;  
+}
+/* hearder stop */
 
 section {
     width: 100%;
@@ -58,41 +92,6 @@ h3 {
 section:nth-child(2n-1) .row h2 {
     border-bottom: 3px solid var(--tan);
 }
-
-/* header start */
-header {
-    width: 100%;
-    padding: 5px 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: var(--macha);
-    color: var(--grey);
-}
-header h1 {
-    font-size: 55px;
-    text-align: center;
-}
-header nav ul {
-    display: flex;
-    justify-content: space-between;
-    /* removes buttet points */
-    list-style: none;
-}
-header nav ul li a {
-    font-size: 3vw;
-    margin: 10px 10px;
-    /* removes hyperlink look from a tags */
-    text-decoration: none;
-    color: var(--grey);
-}
-header nav ul li a:hover {
-    text-shadow: 1px 1px #402218;
-    color: #402218;
-    border-bottom: 1px solid#402218;
-    padding-bottom: 5px;  
-}
-/* hearder stop */
 
 /* bio start */
 .bio-container{
@@ -186,7 +185,7 @@ footer nav ul li a {
 /* media queries */
 @media screen and (max-width: 1100px) {
     header h1{
-        padding: 10px;
+        padding: 5px;
         font-size: 5vw;
     }
     header nav ul li a {
@@ -216,6 +215,9 @@ footer nav ul li a {
     footer .row h4 {
         font-size: 35px;
     }
+    .icon{
+        width: 55px;
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -236,7 +238,7 @@ footer nav ul li a {
         justify-content: center;
     }
     .icon{
-        width: 15%;
+        width: 10%;
     }
 
 }
